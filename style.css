@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    width: 100vw;
+    min-height: 100vh;
+}
+/* nav container start */
+nav{
+    width: 100%;
+    height: 65px;
+    background-color: rgb(1, 1, 39);
+    /* position: sticky;
+    top: 0%;
+    right: 0%; */
+}
+.container{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+/* nav container end */
+
+/* brand section start */
+.brand-section{
+    display: flex;
+    align-items: center;
+}
+.brand-logo{
+    margin-right: 1rem;
+}
+.brand-logo,span{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.brand-title a{
+    text-decoration: none;
+    color: #fff;
+}
+.brand-title a:hover{
+    color: salmon;
+}
+/* brand section end */
+
+/* main menu section start */
+.main-menu{
+    display: flex;
+    margin-left: 2rem;
+}
+.main-menu a,
+.rigth-menu a{
+    display: inline-block;
+    margin-right: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+}
+.main-menu a:hover{
+    text-decoration: underline;
+    color: #ffff00;
+}
+/* main menu section end */
+
+/* right menu start */
+.rigth-menu{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+.rigth-menu button >span{
+    font-size: 1.5rem;
+}
+/* right menu start */
+
+/* dropdown start */
+.dropdown{
+    position: relative;
+}
+.dropdown:hover >.dropdown-items{
+    display: block;
+}
+.dropdown >.dropdown-items{
+    position: absolute;
+    right: 0%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 200px;
+    border-radius: 0.15rem;
+    display: none;
+}
+.dropdown-items-ul{
+    list-style-type: none;
+}
+.dropdown-items-li{
+    padding: 0.5rem 1rem;
+    text-align: left;
+}
+.dropdown-items-li:hover{
+    background-color: #ddd;
+}
+.dropdown-items-li a{
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: normal;
+}
+.divider{
+    color: #d2d2d2;
+}
+/* dropdown end */
+
+/* mega mune start */
+.mega-menu{
+    position: relative;
+    padding: 1rem 0;
+}
+.mega-menu-container{
+    position: absolute;
+    top: 100%;
+    width: 700px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: none;
+    padding: 1rem 2rem;
+}
+.mega-menu:hover .mega-menu-container{
+    display: flex;
+    gap: 2rem;
+}
+.category-list{
+    list-style-type: none;
+    margin-top: 1rem;
+}
+.category-list li{
+    padding: 0.5rem 1rem;
+}
+.category-list a{
+    color: #333;
+    font-size: 0.8rem;
+    text-align: left;
+}
+.category-list a:hover{
+    color: green;
+}
+/* mega mune end */
+.wraper{
+    width: 100%;
+    margin: 20px auto;
+}
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 2rem;
+}
+h1:hover{
+    cursor: pointer;
+    color: rgb(184, 17, 81);
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* simple gallary */
+.gallary{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallary img{
+    margin: 10px;
+    border: 2px solid #000;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+.img1:hover{
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px 0px #0a0909;
+}
+.img1{
+    width: 400px;
+    height: 350px;
+    padding: 5px 0px 0px 13px;
+    box-shadow: 0px 2px 3px 0px #1a0a0a;
+    margin-left: 5px;
+    background-color: #1abc9c;
+}
+h2{
+    text-align: center;
+    font-size:25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #320202;
+}
+p{
+    color: #fff;
+}
+
+/* footer part start */
+.footer{
+    width: 100%;
+    height: 60px;
+    background-color:#020024 ;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
